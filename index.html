@@ -1,108 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
     <title>Waoo Moments</title>
-
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Custom Fonts -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="vendor/simple-line-icons/css/simple-line-icons.css"
+      rel="stylesheet"
+    />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <!-- Custom CSS -->
-    <link href="css/stylish-portfolio.min.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+    <link href="css/waooMoments.min.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
     <style>
-      .fa-heart{color:red;}
+      .icon-heart {
+        color: #e00;
+        animation: beat 0.25s infinite alternate;
+        transform-origin: center;
+      }
 
-      .masthead h1{
-        font-family: 'Open Sans', sans-serif !important;
+      /* Heart beat animation */
+      @keyframes beat {
+        to {
+          transform: scale(1.4);
+        }
+      }
+      .masthead h1 {
+        font-family: "Open Sans", sans-serif !important;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
       }
-      .masthead h3{
-        color:white;
+      .masthead h3 {
+        color: white;
       }
-      .profile img{
-        height:120%;
-        width:120%;
-        border-radius:15px;
+      .profile img {
+        height: 120%;
+        width: 120%;
+        border-radius: 15px;
       }
-      .profile1 img{
-        height:100%;
-        width:100%;
+      .profile1 img {
+        height: 100%;
+        width: 100%;
       }
       @media screen and (min-width: 960px) {
-        .profile1 img{
+        .profile1 img {
           border-top-left-radius: 175px;
         }
       }
 
-      .bg-yellow{
+      .bg-yellow {
         background-color: #ffc107;
       }
       #footer {
-    display: block;
-    font-size: 1.5em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
-    font-family: 'Source Sans Pro';
-    font-weight: 300;
-    color: #777;
-    line-height: 1.65em;
-    font-size: 14pt;
-    padding-top:3em;
+        display: block;
+        font-size: 1.5em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        font-weight: bold;
+        font-family: "Source Sans Pro";
+        font-weight: 300;
+        color: #777;
+        line-height: 1.65em;
+        font-size: 14pt;
+        padding-top: 3em;
       }
-      #footer h2{
-        font-size:25pt;
+      #footer h2 {
+        font-size: 25pt;
         padding-bottom: 1em;
       }
-      .callout
-      {
+      .callout {
         padding-top: 5rem;
         padding-bottom: 5rem;
         background-color: #f0f0f0;
       }
-      .callout h5{
-        color:#24809f;
+      .callout h5 {
+        color: #24809f;
       }
-      .callout h1{
-        color:#777;
+      .callout h1 {
+        color: #777;
       }
-      .contact
-      {
+      .contact {
         padding-bottom: 3rem;
       }
-      .margincontact
-      {
+      .margincontact {
         padding-bottom: 2rem;
         padding-left: 2rem;
         padding-right: 2rem;
       }
-      .iconstyle
-      {
-        font-size:48px;
-        color:#24809f;
+      .iconstyle {
+        font-size: 48px;
+        color: #24809f;
       }
-
+      .half{
+        width: 50%;
+        height: auto;
+        float: left;
+      }
+      #about>.container{
+        margin: 0 !important;
+        width: 100% !important;
+        max-width: fit-content !important;
+      }
+      #about h2{
+        padding-top: 5.0rem;
+      }
     </style>
   </head>
 
   <body id="page-top">
     <!-- Navigation -->
     <a class="menu-toggle rounded" href="#">
-      <i class="fa fa-bars"></i>
+      <i class="icon-menu"></i>
     </a>
     <nav id="sidebar-wrapper">
       <ul class="sidebar-nav">
@@ -130,35 +152,51 @@
     <!-- Header -->
     <header class="masthead d-flex">
       <div class="container text-center my-auto">
-        <h1 class="mb-1"><em style="color:white;">Waoo</em>
-          <em style="color:#ffc107">Moments</em></h1>
+        <h1 class="mb-1">
+          <em style="color:white;">Waoo</em>
+          <em style="color:#ffc107">Moments</em>
+        </h1>
         <h3 class="mb-5">
-          <em>Memories are timeless treasures of the heart <i class="fa fa-heart"></i> </em>
+          <em
+            >Memories are timeless treasures of the heart
+            <i class="icon-heart"></i>
+          </em>
         </h3>
-        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Let us paint your story!!</a>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about"
+          >Let us paint your story!!</a
+        >
       </div>
       <div class="overlay"></div>
     </header>
 
-    <!-- About -->
-    <section class="content-section bg-yellow" id="about">
-      <div classs="col-md-6">
-        <div class="container text-center">
-          <h2>No one can ever take your moments from you... Each day
-          is a new beginning.</h2>
-          <p class="lead mb-5">Let us frame it for you to treasure forever
-          because its the memories that will last for a lifetime.</p>
-          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">
-          So the adventure begins...</a>
+
+    <section
+      class="bg-yellow text-center"
+      id="about"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 mb-5 mb-lg-0">
+            <h2>
+              <strong>No one can ever take your moments from you... Each day is a new beginning.</strong>
+            </h2>
+            <p class="mb-0">Let us frame it for you to treasure forever because its thememories that will last for a lifetime.</p>
+            <a class="btn btn-dark btn-xl js-scroll-trigger mt-5" href="#services"
+              >So the adventure begins...</a
+            >
+          </div>
+          <div class="col-lg-6 col-md-6 mb-5 mb-lg-0 profile1">
+              <img src="img/image2.jpg" />
+          </div>
         </div>
-      </div>
-      <div class="col-md-6 profile1">
-        <img src="img/image2.jpg">
       </div>
     </section>
 
     <!-- Services -->
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <section
+      class="content-section bg-primary text-white text-center"
+      id="services"
+    >
       <div class="container">
         <div class="content-section-heading">
           <h3 class="text-secondary mb-0">Services</h3>
@@ -172,8 +210,8 @@
             <h4>
               <strong>eInvitation Card</strong>
             </h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
+            <!-- <p class="text-faded mb-0">Looks great on any screen size!</p>
+            <p class="text-faded mb-0">Looks great on any screen size!</p> -->
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -182,7 +220,7 @@
             <h4>
               <strong>Personalised Album</strong>
             </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+            <!-- <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p> -->
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -191,9 +229,9 @@
             <h4>
               <strong>Story Telling</strong>
             </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fa fa-heart"></i>
-              Start Bootstrap!</p>
+            <!-- <p class="text-faded mb-0">Millions of users
+              <i class="icon-heart"></i>
+              Start Bootstrap!</p> -->
           </div>
           <div class="col-lg-3 col-md-6">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -202,8 +240,9 @@
             <h4>
               <strong>Social Media Share</strong>
             </h4>
-            <p class="text-faded mb-0">Share your photos in Facebook,instagram in
-              one click!</p>
+            <p class="text-faded mb-0">
+              Share your photos in Facebook,instagram in one click!
+            </p>
           </div>
           <div class="col-lg-3 col-md-6">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -212,8 +251,10 @@
             <h4>
               <strong>Wedding Itineary</strong>
             </h4>
-            <p class="text-faded mb-0">The who, what,when and where of your wedding day in one timeline.</p>
-            <p>
+            <p class="text-faded mb-0">
+              The who, what,when and where of your wedding day in one timeline.
+            </p>
+            <p></p>
           </div>
         </div>
       </div>
@@ -222,33 +263,42 @@
     <!-- Callout -->
     <section class="callout">
       <div class="container text-center contact">
-        <h1>Creating your own wedding website has never been easier </h1>
+        <h1>Creating your own wedding website has never been easier</h1>
       </div>
       <div class="row  text-center margincontact">
-        <div class="col-md-4" >
+        <div class="col-md-4">
           <i class="fa fa-window-maximize iconstyle"></i>
-          <h5>A worthwhile personalized website</h5><br>
-          <p>Your own fully customized pocket friendly wedding website, full of
-          your wedding stories and precious moments. </p>
-        </div>
-        <div class="col-md-4" >
-          <i class="fa fa-address-card iconstyle"></i>
-          <h5>Your album style defined</h5><br>
-          <p>pulling photos from your curated image bucket and sit back relax. Let
-            us frame them to reality for you, just the way you want them to.
+          <h5>A worthwhile personalized website</h5>
+          <br />
+          <p>
+            Your own fully customized pocket friendly wedding website, full of
+            your wedding stories and precious moments.
           </p>
         </div>
-        <div class="col-md-4" >
+        <div class="col-md-4">
+          <i class="fa fa-address-card iconstyle"></i>
+          <h5>Your album style defined</h5>
+          <br />
+          <p>
+            pulling photos from your curated image bucket and sit back relax.
+            Let us frame them to reality for you, just the way you want them to.
+          </p>
+        </div>
+        <div class="col-md-4">
           <i class="fa fa-share-alt-square iconstyle"></i>
-          <h5>Easy Share option</h5><br>
-          <p>Make your loved ones also a part of this memory paved journey.
-            Bring it all to life by sharig them with your friends/family/close ones
+          <h5>Easy Share option</h5>
+          <br />
+          <p>
+            Make your loved ones also a part of this memory paved journey. Bring
+            it all to life by sharig them with your friends/family/close ones
             any where, everywhere.
           </p>
         </div>
       </div>
       <div class="container text-center">
-        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#getInTouch">Get in touch!</a>
+        <a class="btn btn-dark btn-xl js-scroll-trigger" href="#getInTouch"
+          >Get in touch!</a
+        >
       </div>
     </section>
 
@@ -261,28 +311,39 @@
         </div>
         <div class="row no-gutters">
           <div class="col-lg-6">
-            <a class="portfolio-item" target="_blank" href="https://myportfolio365.github.io/DebrupWedsPiyasa/">
+            <a
+              class="portfolio-item"
+              target="_blank"
+              href="https://myportfolio365.github.io/DebrupWedsPiyasa/"
+            >
               <span class="caption">
                 <span class="caption-content">
                   <h2>Debrup Weds Piyasa</h2>
                   <p class="mb-0">A precious moment to remember!</p>
                 </span>
               </span>
-              <img class="img-fluid" src="img/DebrupWedsPiyasa.jpg" alt="">
+              <img class="img-fluid" src="img/DebrupWedsPiyasa.jpg" alt="" />
             </a>
           </div>
           <div class="col-lg-6">
-            <a class="portfolio-item" target="_blank" href="https://myportfolio365.github.io/PayelWedsBhudip/">
+            <a
+              class="portfolio-item"
+              target="_blank"
+              href="https://myportfolio365.github.io/PayelWedsBhudip/"
+            >
               <span class="caption">
                 <span class="caption-content">
                   <h2>Payel Weds Bhudip</h2>
-                  <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+                  <p class="mb-0">
+                    A dark blue background with a colored pencil, a clip, and a
+                    tiny ice cream cone!
+                  </p>
                 </span>
               </span>
-              <img class="img-fluid" src="img/portfolio-2.jpg" alt="">
+              <img class="img-fluid" src="img/PayelWedsBhudip.jpg" alt="" />
             </a>
           </div>
-<!--           <div class="col-lg-6">
+          <!--           <div class="col-lg-6">
             <a class="portfolio-item" href="#">
               <span class="caption">
                 <span class="caption-content">
@@ -307,71 +368,70 @@
         </div>
       </div>
     </section>
-
-    <!-- Call to Action -->
-<!--     <section class="content-section bg-primary text-white">
+    <!-- Callout -->
+    <section class="callout">
       <div class="container text-center">
-        <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-        <a href="#" class="btn btn-xl btn-light mr-4">Click Me!</a>
-        <a href="#" class="btn btn-xl btn-dark">Look at Me!</a>
+        <h2 class="mx-auto mb-5">
+          Because planning the biggest day of your life is only the begining of
+          your adventure
+        </h2>
+        <a class="btn btn-primary btn-xl js-scroll-trigger" href="#getInTouch"
+          >Get in touch!</a
+        >
       </div>
-    </section> -->
-
-    <!-- Get In Touch -->
-    <section id="getInTouch" class="getintouch col-md-6">
-
     </section>
     <!-- Footer -->
-    <!-- Footer -->
-  <section id="footer">
-    <div class="container">
-      <header>
-        <h2>Questions or comments? <strong>Get in touch:</strong></h2>
-      </header>
-      <div class="row">
-        <div class="col-md-6 col-12-medium">
-          <section>
-            <form method="post" action="#">
-              <div class="row gtr-50">
-                <div class="col-md-6 col-12-small">
-                  <input name="name" placeholder="Name" type="text" />
+    <section id="getInTouch">
+      <div class="container">
+        <header>
+          <h2>Questions or comments? <strong>Get in touch:</strong></h2>
+        </header>
+        <div class="row">
+          <div class="col-md-6 col-12-medium">
+            <section>
+              <form method="post" action="#">
+                <div class="row gtr-50">
+                  <div class="col-md-6 col-12-small">
+                    <input name="name" placeholder="Name" type="text" />
+                  </div>
+                  <div class="col-md-6 col-12-small">
+                    <input name="email" placeholder="Email" type="text" />
+                  </div>
+                  <div class="col-12">
+                    <textarea name="message" placeholder="Message"></textarea>
+                  </div>
+                  <div class="col-12">
+                    <a href="#" class="form-button-submit button fa fa-envelope"
+                      >Send Message</a
+                    >
+                  </div>
                 </div>
-                <div class="col-md-6 col-12-small">
-                  <input name="email" placeholder="Email" type="text" />
-                </div>
-                <div class="col-12">
-                  <textarea name="message" placeholder="Message"></textarea>
-                </div>
-                <div class="col-12">
-                  <a href="#" class="form-button-submit button fa fa-envelope">Send Message</a>
+              </form>
+            </section>
+          </div>
+          <div class="col-md-6 col-12-medium">
+            <section>
+              <p>
+                You can directly reach out to us via whatsapp. If you have any
+                query you can directly mail to us
+              </p>
+              <div class="row">
+                <div class="col-6 col-12-small">
+                  <ul class="icons">
+                    <li class="fa fa-whatsapp">
+                      <p>(+91) 8240-835-226</p>
+                    </li>
+                    <li class="fa fa-envelope">
+                      <a href="#">contact@waoomoments.com</a>
+                    </li>
+                  </ul>
                 </div>
               </div>
-            </form>
-          </section>
-        </div>
-        <div class="col-md-6 col-12-medium">
-          <section>
-            <p>You can directly reach out to us via whatsapp. If you have
-            any query you can directly mail to us</p>
-            <div class="row">
-              <div class="col-6 col-12-small">
-                <ul class="icons">
-                  <li class="fa fa-whatsapp">
-                    <p>(+91) 8240-835-226</p>
-                  </li>
-                  <li class="fa fa-envelope">
-                    <a href="#">contact@waoomoments.com</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </section>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-
+    </section>
 
     <!-- Map -->
     <!--
@@ -383,7 +443,10 @@
       </small>
     </section>
   -->
-    <section class="content-section bg-primary text-white text-center" id="services">
+    <section
+      class="content-section bg-primary text-white text-center"
+      id="team"
+    >
       <div class="container">
         <div class="content-section-heading">
           <h2 class="mb-2">Core Members</h2>
@@ -392,13 +455,12 @@
         <div class="row">
           <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-5 profile">
-              <img src="img/jiwn.jpg">
+              <img src="img/jiwn.jpg" />
             </span>
             <h4>
               <strong>Jiwan Ghosal</strong>
             </h4>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
-            <p class="text-faded mb-0">Looks great on any screen size!</p>
+            <!-- <p class="text-faded mb-0">Looks great on any screen size!</p> -->
           </div>
           <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -407,7 +469,7 @@
             <h4>
               <strong>Bhudip Majumdar</strong>
             </h4>
-            <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p>
+            <!-- <p class="text-faded mb-0">Freshly redesigned for Bootstrap 4.</p> -->
           </div>
           <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
@@ -416,20 +478,18 @@
             <h4>
               <strong>Payel Dey</strong>
             </h4>
-            <p class="text-faded mb-0">Millions of users
-              <i class="fa fa-heart"></i>
-              Start Bootstrap!</p>
+            <!-- <p class="text-faded mb-0">Millions of users
+              <i class="icon-heart"></i>
+              Start Bootstrap!</p> -->
           </div>
         </div>
       </div>
     </section>
 
-
-
     <!-- Footer -->
     <footer class="footer text-center">
       <div class="container">
-        <ul class="list-inline mb-5">
+        <!-- <ul class="list-inline mb-5">
           <li class="list-inline-item">
             <a class="social-link rounded-circle text-white mr-3" href="#">
               <i class="icon-social-facebook"></i>
@@ -445,26 +505,26 @@
               <i class="icon-social-instagram"></i>
             </a>
           </li>
-        </ul>
-        <p class="text-muted small mb-0">Copyright &copy; waoomoments.com 2019</p>
+        </ul> -->
+        <p class="text-muted small mb-0">
+          Copyright &copy; waoomoments.com 2019
+        </p>
       </div>
     </footer>
 
     <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
-      <i class="fa fa-angle-up"></i>
+      <i class="icon-arrow-up-circle"></i>
     </a>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for this template -->
-    <script src="js/stylish-portfolio.min.js"></script>
-
+    <script src="js/waooMoments.min.js"></script>
   </body>
-
 </html>
