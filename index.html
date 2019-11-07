@@ -18,10 +18,16 @@
       rel="stylesheet"
       type="text/css"
     />
+    <!--
     <link
       href="vendor/simple-line-icons/css/simple-line-icons.css"
       rel="stylesheet"
+    /> -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
     />
+</head>
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <!-- Custom CSS -->
     <link href="css/waooMoments.min.css" rel="stylesheet" />
@@ -82,24 +88,13 @@
         font-size: 25pt;
         padding-bottom: 1em;
       }
-      .callout {
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        background-color: #f0f0f0;
-      }
-      .callout h5 {
-        color: #24809f;
-      }
-      .callout h1 {
-        color: #777;
-      }
+
       .contact {
         padding-bottom: 3rem;
       }
-      .margincontact {
-        padding-bottom: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+      .grey-background
+      {
+        background-color: #f0f0f0;
       }
       .iconstyle {
         font-size: 48px;
@@ -118,6 +113,30 @@
       #about h2{
         padding-top: 5.0rem;
       }
+      #getInTouch header
+      {
+        color:#777;
+        padding-top: 3rem;
+        padding-bottom: 1rem;
+      }
+      #getInTouch
+      {
+        background-color: #f0f0f0;
+      }
+     #callout
+      {
+        background-color: #f0f0f0 !important;
+        color:black !important;
+      }
+      .bg-color
+      {
+        color:#1d809f!important;
+      }
+      .grey-color
+      {
+        color:#777!important;
+      }
+
     </style>
   </head>
 
@@ -163,7 +182,7 @@
           </em>
         </h3>
         <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about"
-          >Let us paint your story!!</a
+          >Let us add more colors in your story!!</a
         >
       </div>
       <div class="overlay"></div>
@@ -180,7 +199,7 @@
             <h2>
               <strong>No one can ever take your moments from you... Each day is a new beginning.</strong>
             </h2>
-            <p class="mb-0">Let us frame it for you to treasure forever because its thememories that will last for a lifetime.</p>
+            <p class="mb-0">Let us frame it for you to treasure forever because its the memories that will last for a lifetime.</p>
             <a class="btn btn-dark btn-xl js-scroll-trigger mt-5" href="#services"
               >So the adventure begins...</a
             >
@@ -205,7 +224,7 @@
         <div class="row">
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-screen-smartphone"></i>
+              <i class="fa fa-mobile-phone iconstyle" style="font-size:48px;"></i>
             </span>
             <h4>
               <strong>eInvitation Card</strong>
@@ -215,7 +234,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-puzzle"></i>
+              <i class="fa fa-puzzle-piece iconstyle"></i>
             </span>
             <h4>
               <strong>Personalised Album</strong>
@@ -224,7 +243,7 @@
           </div>
           <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-bubble"></i>
+              <i class="fa fa-comments-o iconstyle"></i>
             </span>
             <h4>
               <strong>Story Telling</strong>
@@ -235,7 +254,7 @@
           </div>
           <div class="col-lg-3 col-md-6">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-share"></i>
+              <i class="fa fa-share-square-o iconstyle"></i>
             </span>
             <h4>
               <strong>Social Media Share</strong>
@@ -246,7 +265,7 @@
           </div>
           <div class="col-lg-3 col-md-6">
             <span class="service-icon rounded-circle mx-auto mb-3">
-              <i class="icon-timeline"></i>
+              <i class="fa fa-calendar iconstyle"></i>
             </span>
             <h4>
               <strong>Wedding Itineary</strong>
@@ -261,32 +280,33 @@
     </section>
 
     <!-- Callout -->
-    <section class="callout">
-      <div class="container text-center contact">
-        <h1>Creating your own wedding website has never been easier</h1>
+    <section class="content-section bg-primary text-white text-center" id="callout">
+      <div class="container">
+      <div class="content-section-heading">
+        <h2 class="mb-5 grey-color">Creating your own wedding website has never been this easier</h2>
       </div>
-      <div class="row  text-center margincontact">
-        <div class="col-md-4">
+      <div class="row">
+        <div class="col-lg-4">
           <i class="fa fa-window-maximize iconstyle"></i>
-          <h5>A worthwhile personalized website</h5>
+          <h5 class="bg-color">A worthwhile personalized website</h5>
           <br />
           <p>
             Your own fully customized pocket friendly wedding website, full of
             your wedding stories and precious moments.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <i class="fa fa-address-card iconstyle"></i>
-          <h5>Your album style defined</h5>
+          <h5 class="bg-color">Your album style defined</h5>
           <br />
           <p>
-            pulling photos from your curated image bucket and sit back relax.
+            pull in photos from your curated image bucket and sit back relax.
             Let us frame them to reality for you, just the way you want them to.
           </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-lg-4">
           <i class="fa fa-share-alt-square iconstyle"></i>
-          <h5>Easy Share option</h5>
+          <h5 class="bg-color">Easy Share option</h5>
           <br />
           <p>
             Make your loved ones also a part of this memory paved journey. Bring
@@ -300,6 +320,7 @@
           >Get in touch!</a
         >
       </div>
+    </div>
     </section>
 
     <!-- Portfolio -->
@@ -368,7 +389,7 @@
         </div>
       </div>
     </section>
-    <!-- Callout -->
+    <!-- Callout
     <section class="callout">
       <div class="container text-center">
         <h2 class="mx-auto mb-5">
@@ -379,7 +400,7 @@
           >Get in touch!</a
         >
       </div>
-    </section>
+    </section> -->
     <!-- Footer -->
     <section id="getInTouch">
       <div class="container">
