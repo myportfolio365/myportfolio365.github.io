@@ -169,7 +169,7 @@ h6 {
 
 .service-icon {
   background-color: #fff;
-  color: #1D809F;
+  color: #6200EE;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -247,7 +247,7 @@ footer.footer {
     width: 4rem;
     line-height: 4.3rem;
     font-size: 1.5rem;
-    background-color: #1D809F;
+    background-color: #6200EE;
     transition: background-color 0.15s ease-in-out;
     box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1); }
     footer.footer .social-link:hover {
@@ -255,13 +255,13 @@ footer.footer {
       text-decoration: none; }
 
 a {
-  color: #1D809F; }
+  color: #6200EE; }
   a:hover, a:focus, a:active {
     color: #155d74; }
 
 .btn-primary {
-  background-color: #1D809F !important;
-  border-color: #1D809F !important;
+  background-color: #6200EE !important;
+  border-color: #6200EE !important;
   color: #fff !important; }
   .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
     background-color: #155d74 !important;
@@ -283,10 +283,130 @@ a {
   font-weight: 700; }
 
 .bg-primary {
-  background-color: #1D809F !important; }
+  background-color: #6200EE !important; }
 
 .text-primary {
-  color: #1D809F !important; }
+  color: #6200EE !important; }
 
 .text-secondary {
   color: #ecb807 !important; }
+  .fa-heart {
+    color: #e00;
+    animation: beat 0.25s infinite alternate;
+    transform-origin: center;
+  }
+  .fa-whatsapp::before{
+    color:green;
+    font-size: x-large;
+  }
+  .fa-envelope::before{
+    color:#e00;
+    font-size: x-large;
+  }
+  /* Heart beat animation */
+  @keyframes beat {
+    to {
+      transform: scale(1.4);
+    }
+  }
+
+  .masthead h1 {
+    font-family: "Open Sans", sans-serif !important;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 1px 1px 1px #77707099;
+  }
+
+  .masthead h3 {
+    color: white;
+  }
+
+  .profile img {
+    height: 120%;
+    width: 120%;
+    border-radius: 15px;
+  }
+
+  .profile1 img {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  @media screen and (min-width: 960px) {
+    .profile1 img {
+      border-top-left-radius: 175px;
+    }
+  }
+
+  .bg-yellow {
+    background-color: #ffc107;
+  }
+  #callout h2, #getInTouch h2{
+    font-size:2rem
+  }
+  #footer {
+    display: block;
+    font-size: 1.5em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    color: #777;
+    line-height: 1.65em;
+    font-size: 14pt;
+    padding-top: 3em;
+  }
+
+  #footer h2 {
+    font-size: 25pt;
+    padding-bottom: 1em;
+  }
+
+  .contact {
+    padding-bottom: 3rem;
+  }
+
+  .grey-background {
+    background-color: #f0f0f0;
+  }
+
+  .iconstyle {
+    font-size: 48px;
+    color: #3700b3;
+  }
+
+  .half {
+    width: 50%;
+    height: auto;
+    float: left;
+  }
+
+  #about>.container {
+    margin: 0 !important;
+    width: 100% !important;
+    max-width: fit-content !important;
+  }
+
+  #about h2 {
+    padding-top: 5.0rem;
+  }
+  .grey-color {
+    color: #777 !important;
+  }
+
+  #getInTouch .row {
+    width: 100%;
+  }
+
+  .padding5rem {
+    padding-bottom: 2rem;
+  }
+  form input,form textarea{
+    width: 100%;
+    margin-top: 10px;
+    box-shadow: 1px 1px 1px #80808030 inset;
+    border-radius: 4px;
+    background-color: #eeeeee;
+  }
