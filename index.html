@@ -9,7 +9,9 @@
   <meta name="author" content="" />
   <title>Waoo Moments | Memories are timeless treasures of the heart.</title>
   <!-- Bootstrap Core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" /> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <!-- Custom Fonts -->
   <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
@@ -58,11 +60,11 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">
-        <em style="color:white;">Waoo</em>
-        <em style="color:#ffc107">Moments</em>
+      <h1 class="mb-1 imgText text-white">
+        <em>Waoo</em>
+        <em>Moments</em>
       </h1>
-      <h3 class="mb-5">
+      <h3 class="mb-5 imgText">
         <em>Memories are timeless treasures of the heart
           <i class="fa fa-heart"></i>
         </em>
@@ -82,7 +84,7 @@
           </h2>
           <p class="mb-0">Let us frame it for you to treasure forever because its the memories that will last for a
             lifetime.</p>
-          <a class="btn btn-dark js-scroll-trigger mt-5 py-2" href="#services">So the adventure begins ...</a>
+          <a class="btn btn-dark js-scroll-trigger mt-5 py-2 imgText" href="#services">So the adventure begins ...</a>
         </div>
         <div class="col-lg-6 col-md-6 mb-5 mb-lg-0 profile1">
           <img src="img/image2.jpg" />
@@ -229,7 +231,7 @@
         </div>
       </div>
       <div class="container text-center">
-        <a class="btn btn-dark js-scroll-trigger mt-5 py-2" href="#getInTouch">Get in touch!</a>
+        <a class="btn btn-dark js-scroll-trigger mt-5 py-2 imgText" href="#getInTouch">Get in touch!</a>
       </div>
     </div>
   </section>
@@ -242,7 +244,9 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 col-12-medium text-center mb-5">
-            <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSeeWjZ5ylPZy82HDHbTHOhrTQw3bi9aep_8z4wLgxAkVXPtwg/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe id="googleForm"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSeeWjZ5ylPZy82HDHbTHOhrTQw3bi9aep_8z4wLgxAkVXPtwg/viewform?embedded=true"
+              width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </div>
           <div class="col-lg-6 col-12-medium mb-5">
             <div>
@@ -251,10 +255,11 @@
                 query you can directly mail to us
               </p>
               <div class="mt-5 ml-3">
-                <a href="tel:+918240835226"> <i class="fa fa-whatsapp"></i> (+91) 8240-835-226</a>
+                <a href="tel:+918240835226"> <i class="fa fa-whatsapp imgText"></i> (+91) 8240-835-226</a>
               </div>
               <div class="ml-3">
-                <a href="mailto:contact@waoomoments.com"> <i class="fa fa-envelope"></i> contact@waoomoments.com</a>
+                <a href="mailto:contact@waoomoments.com"> <i class="fa fa-envelope imgText"></i>
+                  contact@waoomoments.com</a>
               </div>
             </div>
           </div>
@@ -262,6 +267,28 @@
 
       </div>
     </div>
+  </section>
+  <section id="faq">
+    <div class="container mb-5">
+        <div class="content-section-heading text-center mb-5">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div>
+            <button class="accordion">Question 1</button>
+            <div class="panel">
+              <p>Answer 1</p>
+            </div>
+        
+            <button class="accordion">Question 2</button>
+            <div class="panel">
+              <p>Answer 2</p>
+            </div>
+        
+            <button class="accordion">Question 3</button>
+            <div class="panel">
+              <p>Answer 3</p>
+            </div>
+        </div>
   </section>
   <section class="content-section bg-primary text-white text-center" id="team">
     <div class="container">
@@ -328,24 +355,21 @@
     <i class="fa fa-arrow-up" aria-hidden="true"></i>
   </a>
   <script>
-    // window.onload = function() {
-    //   let link = document.createElement("link");
-    //   link.href = "css/waooMoments.css";      /**** your CSS file ****/ 
-    //   link.rel = "stylesheet"; 
-    //   link.type = "text/css"; 
-    //   document.getElementById("googleForm").document.head.appendChild(link); /**** 0 is an index of your iframe ****/ 
-    // }
-    // document.readyState(()=>{
-    //   window.onload = function() {
-    //     let frameElement = document.getElementById("googleForm");
-    //     let doc = frameElement.contentDocument.getElementByTagName('body')
-    //     console.log(frameElement, doc)
-
-    //     doc.body.innerHTML = doc.body.innerHTML + '<style>.freebirdFormviewerViewReceiptEl,.freebirdFormviewerViewNoPadding{display: none !important;}.m2 .freebirdFormviewerViewItemsItemItem{padding: 8px;}</style>';
-    //   }
-    // })
-    
-  </script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+      
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+          this.classList.toggle("active");
+          var panel = this.nextElementSibling;
+          if (panel.style.display === "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+      </script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <!-- <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
@@ -355,20 +379,20 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/waooMoments.min.js"></script>
+  <script>
+      // window.onload = function() {
+      //   let frameElement = document.getElementById("googleForm");
+      //   console.log(frameElement)
+      //   $( frameElement ).ready(function() {
+      //     let elmnt = frameElement.contentWindow.document
+      //     console.log(frameElement, doc)
+      //     // doc.body.innerHTML = doc.body.innerHTML + '<style> .freebirdFormviewerViewReceiptEl,.freebirdFormviewerViewNoPadding{display: none !important;}.m2 .freebirdFormviewerViewItemsItemItem{padding: 8px;}</style>';
+      //     // elmnt.style.display = "none";
+      //   });
+      // }
+    </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151891529-1"></script>
-  <script>
-    window.onload = function() {
-      let frameElement = document.getElementById("googleForm");
-      console.log(frameElement)
-      $( frameElement ).ready(function() {
-        let elmnt = frameElement.contentWindow.document
-        console.log(frameElement, doc)
-        // doc.body.innerHTML = doc.body.innerHTML + '<style> .freebirdFormviewerViewReceiptEl,.freebirdFormviewerViewNoPadding{display: none !important;}.m2 .freebirdFormviewerViewItemsItemItem{padding: 8px;}</style>';
-        // elmnt.style.display = "none";
-      });
-    }
-  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
