@@ -387,6 +387,7 @@ a {
     margin: 0 !important;
     width: 100% !important;
     max-width: fit-content !important;
+    padding: 0;
   }
 
   #about h2 {
@@ -410,3 +411,4 @@ a {
     border-radius: 4px;
     background-color: #eeeeee;
   }
+  

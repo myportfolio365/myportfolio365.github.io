@@ -240,13 +240,9 @@
         <h2>Questions or comments? <em> Get in touch:</em></h2>
       </div>
       <div class="container">
-        <div class="row gtr-0">
+        <div>
           <div class="col-lg-6 col-12-medium text-center">
-            <div class="container">
-              <div>
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeeWjZ5ylPZy82HDHbTHOhrTQw3bi9aep_8z4wLgxAkVXPtwg/viewform?embedded=true" width="100%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-              </div>
-            </div>
+            <iframe id="googleForm" src="https://docs.google.com/forms/d/e/1FAIpQLSeeWjZ5ylPZy82HDHbTHOhrTQw3bi9aep_8z4wLgxAkVXPtwg/viewform?embedded=true" width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
           </div>
           <div class="col-lg-6 col-12-medium">
             <div>
@@ -332,9 +328,23 @@
     <i class="fa fa-arrow-up" aria-hidden="true"></i>
   </a>
   <script>
-    function sendMessage(name,email,message){
-      cosnole.log(name, email,message)
-    }
+    // window.onload = function() {
+    //   let link = document.createElement("link");
+    //   link.href = "css/waooMoments.css";      /**** your CSS file ****/ 
+    //   link.rel = "stylesheet"; 
+    //   link.type = "text/css"; 
+    //   document.getElementById("googleForm").document.head.appendChild(link); /**** 0 is an index of your iframe ****/ 
+    // }
+    // document.readyState(()=>{
+    //   window.onload = function() {
+    //     let frameElement = document.getElementById("googleForm");
+    //     let doc = frameElement.contentDocument.getElementByTagName('body')
+    //     console.log(frameElement, doc)
+
+    //     doc.body.innerHTML = doc.body.innerHTML + '<style>.freebirdFormviewerViewReceiptEl,.freebirdFormviewerViewNoPadding{display: none !important;}.m2 .freebirdFormviewerViewItemsItemItem{padding: 8px;}</style>';
+    //   }
+    // })
+    
   </script>
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
@@ -347,6 +357,18 @@
   <script src="js/waooMoments.min.js"></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151891529-1"></script>
+  <script>
+    window.onload = function() {
+      let frameElement = document.getElementById("googleForm");
+      console.log(frameElement)
+      $( frameElement ).ready(function() {
+        let elmnt = frameElement.contentWindow.document
+        console.log(frameElement, doc)
+        // doc.body.innerHTML = doc.body.innerHTML + '<style> .freebirdFormviewerViewReceiptEl,.freebirdFormviewerViewNoPadding{display: none !important;}.m2 .freebirdFormviewerViewItemsItemItem{padding: 8px;}</style>';
+        // elmnt.style.display = "none";
+      });
+    }
+  </script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
