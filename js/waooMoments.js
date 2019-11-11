@@ -42,23 +42,40 @@
 
 })(jQuery); // End of use strict
 
-// Disable Google Maps scrolling
-// See http://stackoverflow.com/a/25904582/1607849
-// Disable scroll zooming and bind back the click event
-var onMapMouseleaveHandler = function(event) {
-  var that = $(this);
-  that.on('click', onMapClickHandler);
-  that.off('mouseleave', onMapMouseleaveHandler);
-  that.find('iframe').css("pointer-events", "none");
-}
-var onMapClickHandler = function(event) {
-  var that = $(this);
-  // Disable the click handler until the user leaves the map area
-  that.off('click', onMapClickHandler);
-  // Enable scrolling zoom
-  that.find('iframe').css("pointer-events", "auto");
-  // Handle the mouse leave event
-  that.on('mouseleave', onMapMouseleaveHandler);
-}
-// Enable map zooming with mouse scroll when the user clicks the map
-$('.map').on('click', onMapClickHandler);
+function postToGoogle() {
+  var field1 = $("#nameField").val();
+  var field2 = $("#emailField").val();
+  var field3 = $("#numberField").val();
+  var field4 = $("#descField").val();
+
+  if(field1 == ""){
+      alert('Please Fill Your Name');
+      document.getElementById("nameField").focus();
+      return false;
+  }
+  if(field2 == ""){
+      alert('Please Fill Your Email');
+      document.getElementById("emailField").focus();
+      return false;
+  }
+  if(field4 == ""){
+      alert('Please Fill Your Message');
+      document.getElementById("descField").focus();
+      return false;
+  }
+  $.ajax({
+      url: "https://docs.google.com/forms/d/e/1FAIpQLSeeWjZ5ylPZy82HDHbTHOhrTQw3bi9aep_8z4wLgxAkVXPtwg/formResponse",
+      data: {"emailAddress": field1, "entry.2005620554": field2, "entry.1166974658": field3, "entry.839337160": field4 },
+      type: "POST",
+      dataType: "xml",
+      success: function(d)
+      {
+        console.log('Sucessfully submitted Response')
+      },
+      error: function(x, y, z)
+      { 
+          alert('Sucessfully submitted Response'); 
+      }
+  });
+  return false;
+} 
