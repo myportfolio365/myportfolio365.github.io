@@ -24,6 +24,25 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> -->
     <!-- Custom CSS -->
     <link href="css/waooMoments.css" rel="stylesheet" />
+    <style>
+    .row
+    {
+      margin-right: 0px;
+      margin-left: 0px;
+    }
+    .col-md-6
+    {
+      padding-right: 0px !important;
+      padding-left: 0px !important;
+    }
+    .text-left
+    {
+      text-align:left;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/contract-form.css">
+    <link rel="stylesheet" type="text/css" href="css/icon-font.min.css">
     <!-- <link href="css/footer.css" rel="stylesheet" /> -->
   </head>
   <body id="page-top">
@@ -231,18 +250,108 @@
     </section>
     <!-- getintouch -->
     <section id="getInTouch">
-      <div class="container">
-        <div class="content-section-heading text-center mb-5">
-          <h2>Questions or comments? <em> Get in touch:</em></h2>
-        </div>
-        <div class="container">
+      <!-- <div class="container"> -->
+        <!-- <div class="container"> -->
           <div class="row">
-            <div class="col-lg-6 col-12-medium text-center mb-5">
-              <iframe id="googleForm"
-                src="https://docs.google.com/forms/d/e/1FAIpQLSeeWjZ5ylPZy82HDHbTHOhrTQw3bi9aep_8z4wLgxAkVXPtwg/viewform?embedded=true"
-                width="100%" height="400px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <div class="col-lg-12 col-12-medium text-center mb-5">
+                <div class="container-contact100">
+                    <div class="wrap-contact100">
+                      <form form id="form" target="_self" onsubmit="return postToGoogle();" 
+                      action="" autocomplete="off" class="contact100-form validate-form">
+                        <span class="contact100-form-title">
+                          Send Us A Message
+                        </span>
+                
+                        <!-- <label class="label-input100" for="first-name">Tell us your name *</label> -->
+                        <div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
+                          <input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+                          <span class="focus-input100"></span>
+                        </div>
+                        <div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
+                          <input id="last-name" class="input100" type="text" name="last-name" placeholder="Last name">
+                          <span class="focus-input100"></span>
+                        </div>
+                
+                        <!-- <label class="label-input100" for="email">Enter your email *</label> -->
+                        <div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+                          <input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+                          <span class="focus-input100"></span>
+                        </div>
+                
+                        <!-- <label class="label-input100" for="phone">Enter phone number</label> -->
+                        <div class="wrap-input100">
+                          <input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +1 800 000000">
+                          <span class="focus-input100"></span>
+                        </div>
+                
+                        <!-- <label class="label-input100" for="message">Message *</label> -->
+                        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+                          <textarea id="message" class="input100" name="message" placeholder="Write us a message"></textarea>
+                          <span class="focus-input100"></span>
+                        </div>
+                
+                        <div class="container-contact100-form-btn">
+                          <button class="contact100-form-btn" type="submit">
+                            Send Message
+                          </button>
+                        </div>
+                      </form>
+                
+                      <div class="contact100-more flex-col-c-m text-left" style="background-image: url('img/contact.jpg');">
+                        <div class="flex-w size1 p-b-47">
+                          <div class="txt1 p-r-25">
+                              <span class="lnr lnr-question-circle"></span>
+                          </div>
+                
+                          <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                              <h5>Any Doubts?</h5>
+                            </span>
+                
+                            <span class="txt2">
+                              <p>Please reach out to us</p>
+                            </span>
+                          </div>
+                        </div>
+                
+                        <div class="dis-flex size1 p-b-47">
+                          <div class="txt1 p-r-25">
+                            <span class="lnr lnr-phone-handset"></span>
+                          </div>
+                
+                          <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                              Lets Talk
+                            </span>
+                
+                            <span class="txt3">
+                              +91 7026-217-029
+                            </span>
+                          </div>
+                        </div>
+                
+                        <div class="dis-flex size1 p-b-47">
+                          <div class="txt1 p-r-25">
+                            <span class="lnr lnr-envelope"></span>
+                          </div>
+                
+                          <div class="flex-col size2">
+                            <span class="txt1 p-b-20">
+                              General Support
+                            </span>
+                
+                            <span class="txt3">
+                              admin@progmud.com
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                
+                
             </div>
-            <div class="col-lg-6 col-12-medium mb-5">
+        <!--   <div class="col-lg-6 col-12-medium mb-5">
               <div>
                 <p class="text-center">
                   You can directly reach out to us via whatsapp. If you have any
@@ -256,11 +365,11 @@
                     contact@waoomoments.com</a>
                 </div>
               </div>
-            </div>
+            </div> -->
           </div>
 
-        </div>
-      </div>
+        <!-- </div> -->
+      <!-- </div> -->
     </section>
     <!-- <section id="faq">
       <div class="container mb-5">
@@ -370,6 +479,7 @@
 
     <!-- Plugin JavaScript -->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="js/formsubmission.js"></script>
 
     <!-- Custom scripts for this template -->
     <script src="js/waooMoments.min.js"></script>
@@ -386,7 +496,7 @@
         // }
       </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151891529-1"></script>
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151891529-1"></script> -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments); }
